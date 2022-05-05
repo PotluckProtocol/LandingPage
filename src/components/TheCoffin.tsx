@@ -11,9 +11,9 @@ const Link = styled.a`
 `;
 
 const StyledRoundedButton = styled(RoundedButton)`
-    background-color: #023232;
-    color: #5efdff;
-    box-shadow: 0px 0px 6px 1px ${hexToRgb('#023232', 0.25)};
+    background-color: #be9ad5;
+    color: #370156;
+    box-shadow: 0px 0px 6px 1px ${hexToRgb('#be9ad5', 0.25)};
 `;
 
 const Placeholder = styled.div`
@@ -21,29 +21,30 @@ const Placeholder = styled.div`
 `;
 
 const Text = styled.p`
-    color: #023132;
+    color: #dfc7ee;
 `;
 
-export type PotluckProtocolProps = {
+export type TheCoffinProps = {
     className?: string;
 }
 
-export const PotluckProtocol: React.FC<PotluckProtocolProps> = ({ className }) => {
+export const TheCoffin: React.FC<TheCoffinProps> = ({ className }) => {
     return (
         <SubAppContainer
-            bgColorStart='#002e2f'
-            bgColorEnd='#66f8fa'
+            bgColorStart='#0d010d'
+            bgColorEnd='#39015a'
             className={className}
         >
             <div className='flex items-center justify-center mb-4'>
-                <img style={{ minHeight: 40, maxHeight: 40 }} src='/images/Logo_PotluckProtocol.png' />
+                <img style={{ minHeight: 40, maxHeight: 40 }} src='/images/Logo_TheCoffin.png' />
             </div>
 
-            <Text className='mb-4'>AMM And Suite Of Defi Products</Text>
+            <Text className='mb-4'>Bury your NFTs for staking</Text>
 
             <Placeholder />
-            <Link href="https://app.potluckprotocol.com/" target="_blank">
-                <StyledRoundedButton>DEGEN</StyledRoundedButton>
+
+            <Link href="https://thecoffin.potluckprotocol.com/" target="_blank">
+                <StyledRoundedButton>STAKE</StyledRoundedButton>
             </Link>
         </SubAppContainer>
     )

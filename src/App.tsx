@@ -5,6 +5,7 @@ import { CaveCompounder } from './components/CaveCompounder';
 import { PotluckLabs } from './components/PotluckLabs';
 import { PotluckProtocol } from './components/PotluckProtocol';
 import { SocialLinks } from './components/SocialLinks';
+import { TheCoffin } from './components/TheCoffin';
 
 const Container = styled.div`
     width: 100%;
@@ -61,12 +62,13 @@ const App: React.FC = () => {
                     changeImageAfterMs={5000}
                     images={['/images/Logo.png', 'images/CzeptaZombieKing.jpg', '/images/Bitdaemons.png', '/images/LogoSellek.png', '/images/Upsidedown.png', '/images/LogoBoy.png']}
                 />
-                <SocialLinks className='mt-12 hidden xl:flex' />
+                <SocialLinks className='xl:mt-24 xl:pt-12 mt-12 hidden xl:flex' />
             </MainContainer>
             <SideContainer className="grid gap-12 xl:block lg:grid-cols-3 sm:grid-cols-2">
                 <PotluckProtocol className='xl:mb-12' />
                 <PotluckLabs className='xl:mb-12' />
                 <CaveCompounder className='xl:mb-12' />
+                <TheCoffin className="xl:mb-12" />
             </SideContainer>
             <SocialLinks className='mt-12 grid grid-cols-2 md:flex xl:hidden' />
         </Container>
